@@ -1,2 +1,2 @@
 # prog-imp
-This repository contains my Imperative Programing semester practical paper
+This repository contains my Imperative Programing semester practical papers
