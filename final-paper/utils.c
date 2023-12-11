@@ -1,18 +1,19 @@
 #include "defs.h"
 #include <stdio.h>
 
-Pacients *readPacients(char path[]) {
+int readPacients(char path[], Pacients *pacients, int max_size) {
 	FILE *file = fopen(path, "r");
 	if(file == NULL) {
 		printf("Nao foi possivel abrir o arquivo.\n");
-		return NULL;
+		return;
 	}
 	
 	char line[100];
-	Pacients pacients[10];
-
-	for(int i=0; fgets(line, sizeof(line), FILE *path); i++) {
-		sscanf(line, "%d;%49[^;];%d", &pacients[i].ID, pacients[i].name, &pacients[i].phone);
+	int i;
+	for(i=0;i<max_size && fgets(line, sizeof(line), file); i++) {
+		sscanf(line, "%d;%49[^;];%d", &pacients[i].ID, pacients[i].name, &pacients[i].phoneNumber);
 	};
-	return pacients;	
+	
+	fclose(file);
+	return i;	
 }
