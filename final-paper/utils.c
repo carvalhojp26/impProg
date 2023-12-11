@@ -34,4 +34,3 @@ int readDiet(char path[], Diet *diet, int max_size) {
 	fclose(file);
 	return i;
 };
-
