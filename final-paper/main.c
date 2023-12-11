@@ -3,14 +3,14 @@
 
 int main() {
     	const int MAX_PACIENTS = 10; 
-    	Pacients pacients[MAX_PACIENTS];
+    	Patients patients[MAX_PACIENTS];
     
-   	readPacients("data/pacients.txt", pacients, MAX_PACIENTS);
+   	readPatients("data/patients.txt", patients, MAX_PACIENTS);
 
-    	int count = readPacients("data/pacients.txt", pacients, MAX_PACIENTS);
+    	int count = readPatients("data/patients.txt", patients, MAX_PACIENTS);
 
     	for (int i = 0; i < count; i++) {
-        	printf("ID: %d, Nome: %s, Telemovel: %d\n", pacients[i].ID, pacients[i].name, pacients[i].phoneNumber);
+        	printf("ID: %d, Nome: %s, Telemovel: %d\n", patients[i].ID, patients[i].name, patients[i].phoneNumber);
     	}
 
 	const int MAX_DIETS = 10;
@@ -19,7 +19,7 @@ int main() {
     	count = readDiet("data/diet.txt", diets, MAX_DIETS);
 
     	for (int i = 0; i < count; i++) {
-        	printf("ID: %d, Date: %02d-%02d-%04d, Meal: %s, Food: %s, Calories: %d\n",
+        	printf("ID: %d, Data: %02d-%02d-%04d, Refeicao: %s, Comida: %s, Calorias: %d\n",
                		diets[i].ID, 
                		diets[i].date.day, diets[i].date.month, diets[i].date.year, 
                		diets[i].meal, diets[i].food, 

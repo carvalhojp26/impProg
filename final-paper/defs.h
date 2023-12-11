@@ -8,7 +8,7 @@ typedef struct {
 	int ID;
 	char name[50];
 	int phoneNumber;
-} Pacients;
+} Patients;
 
 typedef struct {
 	int ID;
