@@ -2,15 +2,14 @@
 #include <stdio.h>
 
 int main() {
-    	const int MAX_PACIENTS = 10; 
-    	Pacients pacients[MAX_PACIENTS];
-    
-   	readPacients("data/pacients.txt", pacients, MAX_PACIENTS);
+    	const int MAX_PATIENTS = 10; 
 
-    	int count = readPacients("data/pacients.txt", pacients, MAX_PACIENTS);
+    	Patients patients[MAX_PATIENTS];  
+    
+    	int count = readPatients("data/patients.txt", patients, MAX_PATIENTS);  
 
     	for (int i = 0; i < count; i++) {
-        	printf("ID: %d, Nome: %s, Telemovel: %d\n", pacients[i].ID, pacients[i].name, pacients[i].phoneNumber);
+        	printf("ID: %d, Nome: %s, Telemovel: %d\n", patients[i].ID, patients[i].name, patients[i].phoneNumber); 
     	}
 
 	const int MAX_DIETS = 10;
