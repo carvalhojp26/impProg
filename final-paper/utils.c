@@ -35,7 +35,7 @@ int readDiet(char path[], Diet *diet, int max_size) {
 	return i;
 };
 
-int readMealPlan(char path, MealPlan *mealPlan, int max_size) {
+int readMealPlan(char path[], MealPlan *mealPlan, int max_size) {
 	FILE *file = fopen(path, "r");
 	if(file == NULL) {
 		printf("Nao foi possivel abrir o arquivo.\n");
