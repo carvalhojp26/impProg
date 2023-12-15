@@ -1,2 +1,2 @@
 build:
-	gcc main.c -o main.out
+	gcc main.c utils.c -o main.out

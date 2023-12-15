@@ -1,3 +1,4 @@
+//DataTypes
 typedef struct {
     	int day;
     	int month;
@@ -26,4 +27,11 @@ typedef struct {
 	int maxCal;
 } MealPlan;
 
+typedef enum {
+    PATIENTS,
+    DIET,
+    MEAL_PLAN
+} FileType;
 
+//Funcoes 
+int readFile(char *path, void *data, int max_size, FileType fileType);
