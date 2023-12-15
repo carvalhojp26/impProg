@@ -34,3 +34,19 @@ int readDiet(char path[], Diet *diet, int max_size) {
 	fclose(file);
 	return i;
 };
+
+int readMealPlan(char path, MealPlan *mealPlan, int max_size) {
+	FILE *file = fopen(path, "r");
+	if(file == NULL) {
+		printf("Nao foi possivel abrir o arquivo.\n");
+		return 0;
+	}
+	char line[100];
+	int i;
+	for(i=0; i<max_size && fgets(line, sizeof(line), file); i++) {
+		sscanf(line, "%d;%d-%d-%d;%49[^;];%d;%d", &mealPlan[i].ID, &mealPlan[i].date.day, &mealPlan[i].date.month, &mealPlan[i].date.year, mealPlan[i].meal, &mealPlan[i].minCal, &mealPlan[i].maxCal);
+	};
+
+	fclose(file);
+	return i;
+};
