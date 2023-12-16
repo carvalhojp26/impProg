@@ -4,11 +4,7 @@
 int readFile(char *path, void *data, int max_size, FileType fileType) {
         FILE *file = fopen(path, "r");
         if (file == NULL) {
-<<<<<<< HEAD
                 printf("Nao foi possivel abrir o ficheiro.\n");
-=======
-                printf("Nao foi possivel abrir o arquivo.\n");
->>>>>>> parent of e67a3ca (Indenting files)
                 return 0;
         }
 
@@ -35,11 +31,7 @@ int readFile(char *path, void *data, int max_size, FileType fileType) {
                                 break;
 
                         default:
-<<<<<<< HEAD
                                 printf("Tipo de ficheiro nao suportado.\n");
-=======
-                                printf("Impossivel abrir este arquivo.");
->>>>>>> parent of e67a3ca (Indenting files)
                                 break;
                 }
         }
