@@ -1,0 +1,38 @@
+# Doxyfile 1.9.1
+
+# This is a basic example Doxygen file for C projects with LaTeX output.
+# Modify this file as needed for your project.
+
+# Project related settings
+PROJECT_NAME           = "Your Project Name"
+PROJECT_NUMBER         = "1.0"
+PROJECT_BRIEF          = "A brief description of your project"
+
+# The directory where your source files are located.
+# Change this to the path of your source code.
+INPUT                  = ../
+
+# File patterns to include
+FILE_PATTERNS          = *.c *.h
+
+# Enable only LaTeX output
+GENERATE_HTML          = NO
+GENERATE_LATEX         = YES
+
+# Set the directory where LaTeX output will be saved.
+LATEX_OUTPUT           = latex
+
+# Other settings that might be useful for C projects
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+SOURCE_BROWSER         = NO
+INLINE_SOURCES         = NO
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+REFERENCED_BY_COMPOUND = YES
+REFERENCES_COMPOUND    = YES
+RECURSIVE              = YES
+EXCLUDE_SYMLINKS       = YES
+EXCLUDE_PATTERNS       = */test/*
+EXAMPLE_PATH           = /path/to/your/examples
