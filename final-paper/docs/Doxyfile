@@ -4,9 +4,9 @@
 # Modify this file as needed for your project.
 
 # Project related settings
-PROJECT_NAME           = "Your Project Name"
+PROJECT_NAME           = "Meu projeto"
 PROJECT_NUMBER         = "1.0"
-PROJECT_BRIEF          = "A brief description of your project"
+PROJECT_BRIEF          = "Uma descricao qualquer"
 
 # The directory where your source files are located.
 # Change this to the path of your source code.
@@ -34,5 +34,3 @@ REFERENCED_BY_COMPOUND = YES
 REFERENCES_COMPOUND    = YES
 RECURSIVE              = YES
 EXCLUDE_SYMLINKS       = YES
-EXCLUDE_PATTERNS       = */test/*
-EXAMPLE_PATH           = /path/to/your/examples
