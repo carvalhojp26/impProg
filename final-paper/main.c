@@ -2,13 +2,15 @@
 #include <stdio.h>
 
 int main() {
-    const int MAX_SIZE = 10;
+    const int MAX_SIZE = 20;
 
     Patients patients[MAX_SIZE];
     int numPatients = readFile("data/patients.txt", patients, MAX_SIZE, PATIENTS);
     for (int i = 0; i < numPatients; i++) {
         printf("ID: %d, Nome: %s, Telemovel: %d\n", patients[i].ID, patients[i].name, patients[i].phoneNumber);
     }
+
+    printf("\n");
 
     Diet diets[MAX_SIZE];
     int numDiets = readFile("data/diet.txt", diets, MAX_SIZE, DIET);
@@ -20,6 +22,8 @@ int main() {
                 diets[i].calories);
     }
 
+    printf("\n");
+
     MealPlan mealPlans[MAX_SIZE];
     int numMealPlans = readFile("data/mealPlan.txt", mealPlans, MAX_SIZE, MEAL_PLAN);
     for (int i = 0; i < numMealPlans; i++) {
@@ -28,6 +32,15 @@ int main() {
                 mealPlans[i].date.day, mealPlans[i].date.month, mealPlans[i].date.year,
                 mealPlans[i].meal, mealPlans[i].minCal, mealPlans[i].maxCal);
     }
+	
+    Period period;
+    period.begin.day = 7;
+    period.begin.month = 2;
+    period.begin.year = 2022;
+    period.end.day = 10;
+    period.end.month = 11;
+    period.end.year = 2023;
+    printf("A quantidade de pessoas que excedeu %d calorias no periodo definido foi: %d\n", 500, exceededCalories(diets, MAX_SIZE, 500, period));
 
     return 0;
 }

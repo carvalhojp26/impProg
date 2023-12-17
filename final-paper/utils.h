@@ -6,6 +6,11 @@ typedef struct {
 } Date;
 
 typedef struct {
+	Date begin;
+	Date end;
+} Period;
+
+typedef struct {
 	int ID;
 	char name[50];
 	int phoneNumber;
@@ -21,6 +26,11 @@ typedef struct {
 
 typedef struct {
 	int ID;
+	int calories;
+} IDCalories;
+
+typedef struct {
+	int ID;
 	Date date;
 	char meal[50];
 	int minCal;
@@ -28,10 +38,11 @@ typedef struct {
 } MealPlan;
 
 typedef enum {
-    PATIENTS,
-    DIET,
-    MEAL_PLAN
+    	PATIENTS,
+    	DIET,
+    	MEAL_PLAN
 } FileType;
 
 //Funcoes 
 int readFile(char *path, void *data, int max_size, FileType fileType);
+int exceededCalories(Diet *diets,int max_size, int calories, Period period);
