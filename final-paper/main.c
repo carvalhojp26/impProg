@@ -42,6 +42,16 @@ int main() {
     period.end.year = 2023;
     printf("A quantidade de pessoas que excedeu %d calorias no periodo definido foi: %d\n", 500, exceededCalories(diets, MAX_SIZE, 500, period));
 
+    int outOfRangeIDs[MAX_SIZE];
+    int count = outOfRange(diets, mealPlans, period, numDiets, outOfRangeIDs);
+    
+    sortDescending(outOfRangeIDs, count);
+
+    // Imprimindo os IDs que estão fora do intervalo de calorias
+    printf("IDs fora do intervalo de calorias no período definido:\n");
+    for (int i = 0; i < count; i++) {
+        printf("%d\n", outOfRangeIDs[i]);
+    }
+
     return 0;
 }
-

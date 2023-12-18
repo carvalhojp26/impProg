@@ -92,3 +92,35 @@ int exceededCalories(Diet *diet, int max_size, int calories, Period period) {
 	return counter;
 }
 
+void sortDescending(int ids[], int numberEl) {
+    	int i, j, temp;
+
+    	for (i = 0; i < numberEl - 1; i++) { // Itera do primeiro valor ao penultimo
+        	for (j = i + 1; j < numberEl; j++) { // Itera do segundo valor ao ultimo
+            		if (ids[i] < ids[j]) { // Verifica se o primeiro valor e menor que o segundo
+                		temp = ids[i]; // Casos seja os troca de lugar, durante a troca utiliza temp, uma variavel temporaria para armazenar o valor do elemento do primeiro loop
+                		ids[i] = ids[j];
+                		ids[j] = temp;
+            		}
+        	}	
+    	}
+}
+
+int outOfRange(Diet *diet, MealPlan *mealPlan, Period period, int max_size, int outOfRangeIDs[]) {
+    	int count = 0;
+
+    	for (int i = 0; i < max_size; i++) { // Itera por todos as datas do array e verifica se estao dentro do periodo
+        	if (dateInPeriod(diet[i].date, period)) {
+            		for (int j = 0; j < max_size; j++) {
+                		if (diet[i].ID == mealPlan[j].ID) { // Itera os valores obtidos para comparar se os IDs em ambos arrays sao iguais
+                   			if (diet[i].calories < mealPlan[j].minCal || diet[i].calories > mealPlan[j].maxCal) { // Verifica se os valores estao no intervalo definido em MealPlan
+                        			outOfRangeIDs[count++] = diet[i].ID;
+                        			break;
+                    			}
+                		}
+            		}
+        	}
+    	}
+
+    	return count;
+}

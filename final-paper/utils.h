@@ -45,4 +45,8 @@ typedef enum {
 
 //Funcoes 
 int readFile(char *path, void *data, int max_size, FileType fileType);
-int exceededCalories(Diet *diets,int max_size, int calories, Period period);
+int dateInPeriod(Date date, Period period);
+int exceededCalories(Diet *diet,int max_size, int calories, Period period);
+void sortDescending(int ids[], int numberEl);
+int outOfRange(Diet *diet, MealPlan *mealPlan, Period period, int max_size, int outOfRangeIDs[]);
+
