@@ -1,5 +1,9 @@
 0001; 01-01-2023; pequeno almoco; pao; 60 cal
-0003; 14-02-2023; almoço; sopa; 120 cal
+0003; 14-02-2023; almoco; sopa; 120 cal
 0002; 23-05-2023; jantar; prato de carne; 1200 cal
 0004; 01-01-2023; pequeno almoco; banana; 120 cal
-0005; 05-02-2023; jantar; macarrao; 1000 cal
+0008; 05-02-2023; jantar; lasanha; 1100 cal
+0006; 13-02-2023; pequeno almoco; aveia; 300 cal
+0007; 08-05-2023; jantar; peixe; 500 cal
+0010; 22-10-2023; almoco; pizza; 900 cal
+0009; 26-10-2023; almoco; hamburguer; 1200 cal

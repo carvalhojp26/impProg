@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabalho-PI 2023/2024: Código-Fonte de src/types.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="ipca.jpg"/></td>
+  <td id="projectalign">
+   <div id="projectname">Trabalho-PI 2023/2024
+   </div>
+   <div id="projectbrief">Documentação do trabalho de fim de periodo da disciplina de programação imperativa.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">types.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="types_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TYPES_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TYPES_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">//DataTypes</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structDate.html">   47</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structDate.html#ae2877db38449a862502ee8c0876e55c7">   48</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structDate.html#ae2877db38449a862502ee8c0876e55c7">day</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structDate.html#a7a5f0211f9e854bc507d2bb28dffc432">   49</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structDate.html#a7a5f0211f9e854bc507d2bb28dffc432">month</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structDate.html#a000684228aef785633936202e701164c">   50</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structDate.html#a000684228aef785633936202e701164c">year</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>} <a class="code hl_struct" href="structDate.html">Date</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="structPeriod.html">   70</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="structPeriod.html#af115406d9f289ac8c0af52436022ad5f">   71</a></span>        <a class="code hl_struct" href="structDate.html">Date</a> <a class="code hl_variable" href="structPeriod.html#af115406d9f289ac8c0af52436022ad5f">begin</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="structPeriod.html#a45e118d50f07280a8c7d5e2ee2816be1">   72</a></span>        <a class="code hl_struct" href="structDate.html">Date</a> <a class="code hl_variable" href="structPeriod.html#a45e118d50f07280a8c7d5e2ee2816be1">end</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>} <a class="code hl_struct" href="structPeriod.html">Period</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="structPatients.html">   93</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="structPatients.html#a8abbafe6dc27bac0ba9efac86c8aad90">   94</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structPatients.html#a8abbafe6dc27bac0ba9efac86c8aad90">ID</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="structPatients.html#ade115e23f77a2cb64197aa6de0959b72">   95</a></span>        <span class="keywordtype">char</span> name[50];</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="structPatients.html#a5b7649f3a6f6b8de7b24d48eddeeca2e">   96</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structPatients.html#a5b7649f3a6f6b8de7b24d48eddeeca2e">phoneNumber</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>} <a class="code hl_struct" href="structPatients.html">Patients</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="structDiet.html">  124</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="structDiet.html#a91fb7333f74d11c1a6961c9f0e166646">  125</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structDiet.html#a91fb7333f74d11c1a6961c9f0e166646">ID</a>;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="structDiet.html#a8b38fb61060b370d3c9d9ed049170804">  126</a></span>        <a class="code hl_struct" href="structDate.html">Date</a> <a class="code hl_variable" href="structDiet.html#a8b38fb61060b370d3c9d9ed049170804">date</a>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="structDiet.html#a24658716ce84da610a76b389d1d8ecf3">  127</a></span>        <span class="keywordtype">char</span> meal[50];</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="structDiet.html#abfce2ca8e69cd9bc500729e6fa2eb7ac">  128</a></span>        <span class="keywordtype">char</span> food[50];</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="structDiet.html#a1bd07ad3471b330f811fd81f6cb9b347">  129</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structDiet.html#a1bd07ad3471b330f811fd81f6cb9b347">calories</a>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>} <a class="code hl_struct" href="structDiet.html">Diet</a>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="structIDCalories.html">  148</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="structIDCalories.html#a120ae6b875604991815a60197ec48468">  149</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structIDCalories.html#a120ae6b875604991815a60197ec48468">ID</a>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="structIDCalories.html#ad644538412dcc454e302a67ac2dc2867">  150</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structIDCalories.html#ad644538412dcc454e302a67ac2dc2867">calories</a>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>} <a class="code hl_struct" href="structIDCalories.html">IDCalories</a>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="structMealPlan.html">  178</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="structMealPlan.html#a904f3347ec82cbb0dd447c5037c7be3b">  179</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structMealPlan.html#a904f3347ec82cbb0dd447c5037c7be3b">ID</a>;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="structMealPlan.html#ac396c3f3351304c1308846fdce468a95">  180</a></span>        <a class="code hl_struct" href="structDate.html">Date</a> <a class="code hl_variable" href="structMealPlan.html#ac396c3f3351304c1308846fdce468a95">date</a>;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="structMealPlan.html#ae61db9c94826e3bdbb0250ef4122b291">  181</a></span>        <span class="keywordtype">char</span> meal[50];</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="structMealPlan.html#a16b4b33a274bc90f28d406d32394778e">  182</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structMealPlan.html#a16b4b33a274bc90f28d406d32394778e">minCal</a>;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="structMealPlan.html#a29184b833579956f122d31fb194c3e9f">  183</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structMealPlan.html#a29184b833579956f122d31fb194c3e9f">maxCal</a>;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>} <a class="code hl_struct" href="structMealPlan.html">MealPlan</a>;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="structInfoTable.html">  213</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="structInfoTable.html#ae88ad21c66e18f3994a9d71d71a14e7a">  214</a></span>        <a class="code hl_struct" href="structPatients.html">Patients</a> <a class="code hl_variable" href="structInfoTable.html#ae88ad21c66e18f3994a9d71d71a14e7a">patient</a>;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="structInfoTable.html#a32cd707b890a5fdce3734d9cd6a42553">  215</a></span>        <span class="keywordtype">char</span> meal[50];</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="structInfoTable.html#a4d3e9456f689b393ef20ef26e3d9dc4f">  216</a></span>        <a class="code hl_struct" href="structPeriod.html">Period</a> <a class="code hl_variable" href="structInfoTable.html#a4d3e9456f689b393ef20ef26e3d9dc4f">period</a>;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="structInfoTable.html#a8b1e20518132c13ff8b401cb7384d7cd">  217</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structInfoTable.html#a8b1e20518132c13ff8b401cb7384d7cd">minCal</a>;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="structInfoTable.html#a27b46cad0efb4b010beb35a35b9c8d57">  218</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structInfoTable.html#a27b46cad0efb4b010beb35a35b9c8d57">maxCal</a>;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="structInfoTable.html#a242f9b1b0e22e9c1fe3e6b6bb04cb1af">  219</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structInfoTable.html#a242f9b1b0e22e9c1fe3e6b6bb04cb1af">calories</a>;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>} <a class="code hl_struct" href="structInfoTable.html">InfoTable</a>;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="types_8h.html#a2c794c5c13ab4dd7e65bad031dbe41c3">  240</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="types_8h.html#a2c794c5c13ab4dd7e65bad031dbe41c3a2e8c1b2366a077c3f5f034bb9423471a">  241</a></span>        <a class="code hl_enumvalue" href="types_8h.html#a2c794c5c13ab4dd7e65bad031dbe41c3a2e8c1b2366a077c3f5f034bb9423471a">PATIENTS</a>,</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="types_8h.html#a2c794c5c13ab4dd7e65bad031dbe41c3a96cb70ae9dcec1ce14be346b2e52d7af">  242</a></span>        <a class="code hl_enumvalue" href="types_8h.html#a2c794c5c13ab4dd7e65bad031dbe41c3a96cb70ae9dcec1ce14be346b2e52d7af">DIET</a>,</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        <a class="code hl_enumvalue" href="types_8h.html#a2c794c5c13ab4dd7e65bad031dbe41c3a77675dcaf9ccf83643858e0cfa197446">MEAL_PLAN</a></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="types_8h.html#a2c794c5c13ab4dd7e65bad031dbe41c3a77675dcaf9ccf83643858e0cfa197446">  244</a></span>} <a class="code hl_enumeration" href="types_8h.html#a2c794c5c13ab4dd7e65bad031dbe41c3">FileType</a>;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="preprocessor">#endif </span><span class="comment">// TYPES_H</span></div>
+<div class="ttc" id="astructDate_html"><div class="ttname"><a href="structDate.html">Date</a></div><div class="ttdoc">Estrutura para representar uma data.</div><div class="ttdef"><b>Definition:</b> types.h:47</div></div>
+<div class="ttc" id="astructDate_html_a000684228aef785633936202e701164c"><div class="ttname"><a href="structDate.html#a000684228aef785633936202e701164c">Date::year</a></div><div class="ttdeci">int year</div><div class="ttdef"><b>Definition:</b> types.h:50</div></div>
+<div class="ttc" id="astructDate_html_a7a5f0211f9e854bc507d2bb28dffc432"><div class="ttname"><a href="structDate.html#a7a5f0211f9e854bc507d2bb28dffc432">Date::month</a></div><div class="ttdeci">int month</div><div class="ttdef"><b>Definition:</b> types.h:49</div></div>
+<div class="ttc" id="astructDate_html_ae2877db38449a862502ee8c0876e55c7"><div class="ttname"><a href="structDate.html#ae2877db38449a862502ee8c0876e55c7">Date::day</a></div><div class="ttdeci">int day</div><div class="ttdef"><b>Definition:</b> types.h:48</div></div>
+<div class="ttc" id="astructDiet_html"><div class="ttname"><a href="structDiet.html">Diet</a></div><div class="ttdoc">Estrutura para representar informações sobre a dieta de um paciente.</div><div class="ttdef"><b>Definition:</b> types.h:124</div></div>
+<div class="ttc" id="astructDiet_html_a1bd07ad3471b330f811fd81f6cb9b347"><div class="ttname"><a href="structDiet.html#a1bd07ad3471b330f811fd81f6cb9b347">Diet::calories</a></div><div class="ttdeci">int calories</div><div class="ttdef"><b>Definition:</b> types.h:129</div></div>
+<div class="ttc" id="astructDiet_html_a8b38fb61060b370d3c9d9ed049170804"><div class="ttname"><a href="structDiet.html#a8b38fb61060b370d3c9d9ed049170804">Diet::date</a></div><div class="ttdeci">Date date</div><div class="ttdef"><b>Definition:</b> types.h:126</div></div>
+<div class="ttc" id="astructDiet_html_a91fb7333f74d11c1a6961c9f0e166646"><div class="ttname"><a href="structDiet.html#a91fb7333f74d11c1a6961c9f0e166646">Diet::ID</a></div><div class="ttdeci">int ID</div><div class="ttdef"><b>Definition:</b> types.h:125</div></div>
+<div class="ttc" id="astructIDCalories_html"><div class="ttname"><a href="structIDCalories.html">IDCalories</a></div><div class="ttdoc">Estrutura para representar o consumo de calorias associado a um identificador de paciente.</div><div class="ttdef"><b>Definition:</b> types.h:148</div></div>
+<div class="ttc" id="astructIDCalories_html_a120ae6b875604991815a60197ec48468"><div class="ttname"><a href="structIDCalories.html#a120ae6b875604991815a60197ec48468">IDCalories::ID</a></div><div class="ttdeci">int ID</div><div class="ttdef"><b>Definition:</b> types.h:149</div></div>
+<div class="ttc" id="astructIDCalories_html_ad644538412dcc454e302a67ac2dc2867"><div class="ttname"><a href="structIDCalories.html#ad644538412dcc454e302a67ac2dc2867">IDCalories::calories</a></div><div class="ttdeci">int calories</div><div class="ttdef"><b>Definition:</b> types.h:150</div></div>
+<div class="ttc" id="astructInfoTable_html"><div class="ttname"><a href="structInfoTable.html">InfoTable</a></div><div class="ttdoc">Estrutura para representar informações detalhadas de um plano alimentar e o consumo real de um pacien...</div><div class="ttdef"><b>Definition:</b> types.h:213</div></div>
+<div class="ttc" id="astructInfoTable_html_a242f9b1b0e22e9c1fe3e6b6bb04cb1af"><div class="ttname"><a href="structInfoTable.html#a242f9b1b0e22e9c1fe3e6b6bb04cb1af">InfoTable::calories</a></div><div class="ttdeci">int calories</div><div class="ttdef"><b>Definition:</b> types.h:219</div></div>
+<div class="ttc" id="astructInfoTable_html_a27b46cad0efb4b010beb35a35b9c8d57"><div class="ttname"><a href="structInfoTable.html#a27b46cad0efb4b010beb35a35b9c8d57">InfoTable::maxCal</a></div><div class="ttdeci">int maxCal</div><div class="ttdef"><b>Definition:</b> types.h:218</div></div>
+<div class="ttc" id="astructInfoTable_html_a4d3e9456f689b393ef20ef26e3d9dc4f"><div class="ttname"><a href="structInfoTable.html#a4d3e9456f689b393ef20ef26e3d9dc4f">InfoTable::period</a></div><div class="ttdeci">Period period</div><div class="ttdef"><b>Definition:</b> types.h:216</div></div>
+<div class="ttc" id="astructInfoTable_html_a8b1e20518132c13ff8b401cb7384d7cd"><div class="ttname"><a href="structInfoTable.html#a8b1e20518132c13ff8b401cb7384d7cd">InfoTable::minCal</a></div><div class="ttdeci">int minCal</div><div class="ttdef"><b>Definition:</b> types.h:217</div></div>
+<div class="ttc" id="astructInfoTable_html_ae88ad21c66e18f3994a9d71d71a14e7a"><div class="ttname"><a href="structInfoTable.html#ae88ad21c66e18f3994a9d71d71a14e7a">InfoTable::patient</a></div><div class="ttdeci">Patients patient</div><div class="ttdef"><b>Definition:</b> types.h:214</div></div>
+<div class="ttc" id="astructMealPlan_html"><div class="ttname"><a href="structMealPlan.html">MealPlan</a></div><div class="ttdoc">Estrutura para representar um plano alimentar para um paciente.</div><div class="ttdef"><b>Definition:</b> types.h:178</div></div>
+<div class="ttc" id="astructMealPlan_html_a16b4b33a274bc90f28d406d32394778e"><div class="ttname"><a href="structMealPlan.html#a16b4b33a274bc90f28d406d32394778e">MealPlan::minCal</a></div><div class="ttdeci">int minCal</div><div class="ttdef"><b>Definition:</b> types.h:182</div></div>
+<div class="ttc" id="astructMealPlan_html_a29184b833579956f122d31fb194c3e9f"><div class="ttname"><a href="structMealPlan.html#a29184b833579956f122d31fb194c3e9f">MealPlan::maxCal</a></div><div class="ttdeci">int maxCal</div><div class="ttdef"><b>Definition:</b> types.h:183</div></div>
+<div class="ttc" id="astructMealPlan_html_a904f3347ec82cbb0dd447c5037c7be3b"><div class="ttname"><a href="structMealPlan.html#a904f3347ec82cbb0dd447c5037c7be3b">MealPlan::ID</a></div><div class="ttdeci">int ID</div><div class="ttdef"><b>Definition:</b> types.h:179</div></div>
+<div class="ttc" id="astructMealPlan_html_ac396c3f3351304c1308846fdce468a95"><div class="ttname"><a href="structMealPlan.html#ac396c3f3351304c1308846fdce468a95">MealPlan::date</a></div><div class="ttdeci">Date date</div><div class="ttdef"><b>Definition:</b> types.h:180</div></div>
+<div class="ttc" id="astructPatients_html"><div class="ttname"><a href="structPatients.html">Patients</a></div><div class="ttdoc">Estrutura para representar as informações de um paciente.</div><div class="ttdef"><b>Definition:</b> types.h:93</div></div>
+<div class="ttc" id="astructPatients_html_a5b7649f3a6f6b8de7b24d48eddeeca2e"><div class="ttname"><a href="structPatients.html#a5b7649f3a6f6b8de7b24d48eddeeca2e">Patients::phoneNumber</a></div><div class="ttdeci">int phoneNumber</div><div class="ttdef"><b>Definition:</b> types.h:96</div></div>
+<div class="ttc" id="astructPatients_html_a8abbafe6dc27bac0ba9efac86c8aad90"><div class="ttname"><a href="structPatients.html#a8abbafe6dc27bac0ba9efac86c8aad90">Patients::ID</a></div><div class="ttdeci">int ID</div><div class="ttdef"><b>Definition:</b> types.h:94</div></div>
+<div class="ttc" id="astructPeriod_html"><div class="ttname"><a href="structPeriod.html">Period</a></div><div class="ttdoc">Estrutura para representar um período de tempo definido por uma data de início e uma data de fim.</div><div class="ttdef"><b>Definition:</b> types.h:70</div></div>
+<div class="ttc" id="astructPeriod_html_a45e118d50f07280a8c7d5e2ee2816be1"><div class="ttname"><a href="structPeriod.html#a45e118d50f07280a8c7d5e2ee2816be1">Period::end</a></div><div class="ttdeci">Date end</div><div class="ttdef"><b>Definition:</b> types.h:72</div></div>
+<div class="ttc" id="astructPeriod_html_af115406d9f289ac8c0af52436022ad5f"><div class="ttname"><a href="structPeriod.html#af115406d9f289ac8c0af52436022ad5f">Period::begin</a></div><div class="ttdeci">Date begin</div><div class="ttdef"><b>Definition:</b> types.h:71</div></div>
+<div class="ttc" id="atypes_8h_html_a2c794c5c13ab4dd7e65bad031dbe41c3"><div class="ttname"><a href="types_8h.html#a2c794c5c13ab4dd7e65bad031dbe41c3">FileType</a></div><div class="ttdeci">FileType</div><div class="ttdoc">Enumeração para representar diferentes tipos de ficheiros utilizados no sistema.</div><div class="ttdef"><b>Definition:</b> types.h:240</div></div>
+<div class="ttc" id="atypes_8h_html_a2c794c5c13ab4dd7e65bad031dbe41c3a2e8c1b2366a077c3f5f034bb9423471a"><div class="ttname"><a href="types_8h.html#a2c794c5c13ab4dd7e65bad031dbe41c3a2e8c1b2366a077c3f5f034bb9423471a">PATIENTS</a></div><div class="ttdeci">@ PATIENTS</div><div class="ttdef"><b>Definition:</b> types.h:241</div></div>
+<div class="ttc" id="atypes_8h_html_a2c794c5c13ab4dd7e65bad031dbe41c3a77675dcaf9ccf83643858e0cfa197446"><div class="ttname"><a href="types_8h.html#a2c794c5c13ab4dd7e65bad031dbe41c3a77675dcaf9ccf83643858e0cfa197446">MEAL_PLAN</a></div><div class="ttdeci">@ MEAL_PLAN</div><div class="ttdef"><b>Definition:</b> types.h:243</div></div>
+<div class="ttc" id="atypes_8h_html_a2c794c5c13ab4dd7e65bad031dbe41c3a96cb70ae9dcec1ce14be346b2e52d7af"><div class="ttname"><a href="types_8h.html#a2c794c5c13ab4dd7e65bad031dbe41c3a96cb70ae9dcec1ce14be346b2e52d7af">DIET</a></div><div class="ttdeci">@ DIET</div><div class="ttdef"><b>Definition:</b> types.h:242</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>
