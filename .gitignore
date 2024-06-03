@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+# Directory
+/final-paper/docs/
+
 # Object files
 *.o
 *.ko
